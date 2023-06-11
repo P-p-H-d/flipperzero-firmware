@@ -6,6 +6,7 @@ if ENV["DEBUG"]:
         CPPDEFINES=[
             "FURI_DEBUG",
             "NDEBUG",
+                            "M_USE_DECL",
         ],
         CCFLAGS=[
             "-Og",
@@ -16,6 +17,7 @@ elif ENV["COMPACT"]:
         CPPDEFINES=[
             "FURI_NDEBUG",
             "NDEBUG",
+                "M_USE_DECL",
         ],
         CCFLAGS=[
             "-Os",
@@ -26,6 +28,7 @@ else:
         CPPDEFINES=[
             "FURI_NDEBUG",
             "NDEBUG",
+                "M_USE_DECL",
         ],
         CCFLAGS=[
             "-Og",

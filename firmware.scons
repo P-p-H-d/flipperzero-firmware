@@ -44,6 +44,7 @@ env = ENV.Clone(
             ],
             "CPPDEFINES": [
                 "NDEBUG",
+                "M_USE_DECL",
                 "FURI_NDEBUG",
             ],
             # You can add other entries named after libraries
@@ -55,6 +56,7 @@ env = ENV.Clone(
                 "-Os",
             ],
             "CPPDEFINES": [
+                "M_USE_DECL",
                 "NDEBUG",
                 "FURI_DEBUG" if ENV["DEBUG"] else "FURI_NDEBUG",
             ],
